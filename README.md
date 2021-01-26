@@ -2,7 +2,7 @@
 # An Analysis of LIME for Text Data 
 
 
-This is the code for the article ``An Analysis of LIME for Text Data.'':(https://arxiv.org/abs/2010.12487)
+This is the code for the article ``An Analysis of LIME for Text Data.'': https://arxiv.org/abs/2010.12487
 
 There is nothing to install, you just have to run the scripts.
 
