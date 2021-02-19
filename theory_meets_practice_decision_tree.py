@@ -250,7 +250,7 @@ if __name__ == "__main__":
     
     plot_whisker_boxes(data_store[:,0:12],
                        ax,
-                       title=r"Interpretable coefficients (nu=0.35)",
+                       title=r"Interpretable coefficients for a decision tree",
                        xlabel=None,
                        theo=theory,
                        rotate=False,
