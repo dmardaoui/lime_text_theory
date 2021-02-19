@@ -44,10 +44,10 @@ if __name__ == "__main__":
     n_samples=5000
     
     # number of features
-    n_features=100
+    n_features=1000
     
     # bandwidth 
-    kernel_width=5
+    kernel_width=25
     
     # number of experiments 
     n_exp=100
@@ -171,7 +171,7 @@ if __name__ == "__main__":
     
     plot_whisker_boxes(data_store[:,30:60],
                        ax,
-                       title="Interpretable coefficients (nu=0.05)",
+                       title="Interpretable coefficients for a linear function",
                        xlabel=None,
                        theo=beta_f_linear(d=size_subset,tfidf=tfidf,f=vec,dico=subset_words,gd=global_dict)[30:60],
                        rotate=False,
