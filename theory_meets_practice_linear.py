@@ -69,7 +69,7 @@ if __name__ == "__main__":
     X_train, X_test, y_train, y_test= X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,random_state=11)    
         
     # sample: you can change the sample by simply changing the index
-    sample=X_test[188]
+    sample=X_test[13]
     #sample=X_test[20]
     
     # TF-IDF transformation 
@@ -169,13 +169,13 @@ if __name__ == "__main__":
 
     fig, ax = plt.subplots(figsize=(15,10))
     
-    plot_whisker_boxes(data_store,
+    plot_whisker_boxes(data_store[:,30:60],
                        ax,
                        title="Interpretable coefficients (nu=0.05)",
                        xlabel=None,
-                       theo=beta_f_linear(d=size_subset,tfidf=tfidf,f=vec,dico=subset_words,gd=global_dict),
+                       theo=beta_f_linear(d=size_subset,tfidf=tfidf,f=vec,dico=subset_words,gd=global_dict)[30:60],
                        rotate=False,
-                       feature_names=subset_words,
+                       feature_names=subset_words[30:60],
                        ylims=[-1,1],
                        color="red")
 
