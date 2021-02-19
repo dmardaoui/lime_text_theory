@@ -153,8 +153,8 @@ def plot_whisker_boxes(my_data,
                         #30: decision_tree
                         #markersize=5 decision tree
                         #markersize=3
-                        markersize=18,
-                        markeredgewidth=3,
+                        markersize=25,
+                        markeredgewidth=5,
                         zorder=10,
                         color=color) 
         # setting the labels
