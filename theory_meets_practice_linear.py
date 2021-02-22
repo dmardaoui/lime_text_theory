@@ -171,7 +171,7 @@ if __name__ == "__main__":
     
     plot_whisker_boxes(data_store[:,30:60],
                        ax,
-                       title="Interpretable coefficients for a linear function",
+                       title="Interpretable coefficients for a linear function (nu=%s)" % (kernel_width/100),
                        xlabel=None,
                        theo=beta_f_linear(d=size_subset,tfidf=tfidf,f=vec,dico=subset_words,gd=global_dict)[30:60],
                        rotate=False,
